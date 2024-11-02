@@ -1,0 +1,66 @@
+/* Arquivo de reset de CSS que será colocado em todas as páginas */
+
+/* Remover a margin padrão de todos os elementos e colocar a fonte */
+* {
+  margin: 0;
+  font-family: Helvetica;
+  transition: all 0.15s;
+}
+
+ul {
+  padding: 0px;
+}
+
+main {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+body {
+  /* Colocar uma line-height acessível */
+  line-height: 1.5;
+  /* Melhorar a renderização dos textos */
+  -webkit-font-smoothing: antialiased;
+}
+/* Arrumando configuração de medias */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* Inputs herdando as fontes */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Tirando o overflow dos textos */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* Melhorado o line wrap */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}

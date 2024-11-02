@@ -1,0 +1,96 @@
+.ajuda-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.ajuda-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.ajuda-card h1 {
+  color: #2bc866;
+}
+
+.ajuda-card img {
+  max-width: 500px;
+}
+
+.carousel {
+  display: flex;
+  gap: 30px;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 220px;
+  border-color: #2bc866;
+  border-width: 2px;
+  border-style: solid;
+  padding: 30px 15px;
+  border-radius: 5px;
+  gap: 20px;
+}
+
+.carousel-item h3 {
+  color: #2bc866;
+}
+
+.carousel-item div img {
+  width: 30px;
+  margin-bottom: 20px;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  width: 5vw;
+
+  justify-content: center;
+}
+
+.arrow {
+  background-image: url("arrow_r.png");
+  background-size: 100%;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 40px;
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.left {
+  transform: scaleX(-1);
+}
+
+@media (max-width: 1130px) {
+  .arrow-container {
+    display: none;
+  }
+  .carousel {
+    flex-direction: column;
+  }
+  .carousel-item div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel-item {
+    width: 90%;
+  }
+  .ajuda-container {
+    text-align: center;
+  }
+  .ajuda-card {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,162 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.575);
+  align-items: center;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color: white;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+header nav ul {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+header nav ul a {
+  color: #004aad;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+
+header nav ul a::after {
+  content: "";
+  background-color: #004aad;
+  height: 2px;
+  width: 0px;
+  display: block;
+  transition: all 0.15s;
+}
+
+header nav ul a:hover::after {
+  width: 100%;
+}
+
+.header-buttons-container {
+  display: flex;
+  gap: 20px;
+}
+
+.header-buttons-container a {
+  padding: 8px;
+  border-radius: 20px;
+  border-style: solid;
+  cursor: pointer;
+  border-width: 2px;
+  text-decoration: none;
+}
+
+.entrar-button {
+  background-color: white;
+  color: #1a9047;
+  border-color: #1a9047;
+  max-width: 80px;
+}
+
+.entrar-button:hover {
+  background-color: #1a9047;
+  color: white;
+}
+
+.cadastro-button {
+  background-color: #1a9047;
+  color: white;
+  border-color: #1a9047;
+  width: 120px;
+  text-align: center;
+}
+
+.cadastro-button:hover {
+  opacity: 0.9;
+}
+
+header .hamburguer-button {
+  display: none;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 20px;
+  color: #004aad;
+  font-weight: bold;
+}
+
+.logo:hover {
+  transform: scale(96%);
+}
+
+header .logo img {
+  width: 60px;
+}
+
+@media (max-width: 920px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .hamburguer-button {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+  }
+
+  header .hamburguer-button[active="false"] {
+    background-image: url("png-transparent-hamburger-button-computer-icons-menu-menu-food-text-rectangle-thumbnail.png");
+  }
+
+  header .hamburguer-button[active="true"] {
+    background-image: url("icon-close-512.webp");
+  }
+
+  .show {
+    transform: translateX(-118%);
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: absolute;
+    top: 60px;
+    right: -200px;
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+  }
+  header nav ul {
+    display: grid;
+  }
+  .header-buttons-container {
+    display: grid;
+  }
+  .entrar-button,
+  .cadastro-button {
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,63 @@
+main {
+  margin-top: 120px;
+}
+.account-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.account-container span {
+  cursor: pointer;
+  color: #1a9047;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputs-container input {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.login,
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login[active="true"] {
+  display: flex;
+}
+
+.login[active="false"] {
+  display: none;
+}
+
+.cadastro[active="true"] {
+  display: flex;
+}
+
+.cadastro[active="false"] {
+  display: none;
+}
+
+.account-container button {
+  background-color: #1a9047;
+  color: white;
+  border-color: #1a9047;
+  text-align: center;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.account-container button:hover {
+  opacity: 0.9;
+}

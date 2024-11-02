@@ -1,0 +1,52 @@
+main {
+  background-color: #2bc866;
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+.parceiro-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.parceiro-hero img {
+  max-width: 620px;
+  width: 70%;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-info h1,
+p {
+  color: white;
+}
+
+.empresas {
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.empresas img {
+  width: 70px;
+}
+@media (max-width: 920px) {
+  .parceiro-hero {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .empresas img {
+    width: 50px;
+  }
+}

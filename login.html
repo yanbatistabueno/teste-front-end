@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rastreio Express | Login</title>
+    <link rel="stylesheet" href="css-reset.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">
+        <img src="b3dab813cd9f1f5a46383ee88a3d1d8c.png" alt="" />
+        <p>Rastreio Xpress</p>
+      </a>
+      <nav class="header-nav">
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="sobre-nos.html">Sobre Nós</a>
+          <a href="parceiros.html">Parceiros</a>
+          <a href="ajuda.html">Ajuda</a>
+        </ul>
+        <div class="header-buttons-container">
+          <a href="login.html?type=login" class="entrar-button">Entrar</a>
+          <a href="login.html?type=cadastro" class="cadastro-button"
+            >Cadastrar</a
+          >
+        </div>
+      </nav>
+      <button active="false" class="hamburguer-button"></button>
+    </header>
+
+    <main>
+      <form class="account-container">
+        <div active="true" class="login">
+          <h2>Login do usuário</h2>
+          <div class="inputs-container">
+            <p>E-mail</p>
+            <input type="text" />
+            <p>Senha</p>
+            <input type="password" />
+          </div>
+          <p>Não possuí um cadastro? <span>Cadastre-se agora</span></p>
+        </div>
+        <div active="false" class="cadastro">
+          <h2>Cadastro do usuário</h2>
+          <div class="inputs-container">
+            <p>Nome de usuário</p>
+            <input type="text" />
+            <p>E-mail</p>
+            <input type="text" />
+            <p>Senha</p>
+            <input type="password" />
+            <p>Confirme sua senha</p>
+            <input type="password" />
+          </div>
+          <p>Já possuí cadastro? <span>Entre agora</span></p>
+        </div>
+        <button>Enviar</button>
+      </form>
+    </main>
+
+    <script src="login.js"></script>
+    <script src="header.js"></script>
+  </body>
+</html>
